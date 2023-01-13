@@ -1,0 +1,29 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: microservices
+
+  datasource:
+    name: postgres
+    password: peru2020
+    url: jdbc:postgresql://localhost:5432/microservices
+      #
+      #hikari:
+      # pool-name: hikari
+    #auto-commit: false
+    #
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresSQLDialect
+        format_sql: 'true'
+
+    hibernate:
+      ddl-auto: create-drop
+
+    show-sql: 'true'
+    database: postgresql
+
+
